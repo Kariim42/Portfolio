@@ -1,0 +1,15 @@
+<!--NAV-->
+<div class="header">
+    <div><img src="..\assets\PortfolioLogo.png" alt="" class="logo"></div>
+    <div (click)="openMenu()" class="burgerMenu">
+        <div class="burgerMenu-content"></div>
+        <div class="burgerMenu-content"></div>
+        <div class="burgerMenu-content"></div>
+    </div>
+    <div *ngIf="isActive" class="burgerMenuOpen">
+        <a href="" class="burgerMenuOpenLink">Mes projets</a>
+        <a href="" class="burgerMenuOpenLink">Mon parcours</a>
+        <a href="" class="burgerMenuOpenLink">Me contacter</a>
+        <div class="burgerMenuOpenWhite"></div>
+    </div>
+</div>

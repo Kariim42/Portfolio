@@ -1,0 +1,17 @@
+.header{
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 2px 2px 6px;
+}
+
+.header-content-link{
+    display: flex;
+    justify-content: flex-end;
+    color: whitesmoke;
+    
+}
+
+h1{
+    padding-right: 10%;
+}
