@@ -1,15 +1,20 @@
 <!--NAV-->
-<div class="header">
-    <div><img src="..\assets\PortfolioLogo.png" alt="" class="logo"></div>
-    <div (click)="openMenu()" class="burgerMenu">
-        <div class="burgerMenu-content"></div>
-        <div class="burgerMenu-content"></div>
-        <div class="burgerMenu-content"></div>
-    </div>
-    <div *ngIf="isActive" class="burgerMenuOpen">
+<div class="customNavbar">
+    <div><a href=""><img src="..\assets\PortfolioLogo.png" alt="" class="logo"></a></div>
+    <!--Desktop Menu-->
+    <div class="menuDesktop">
         <a href="" class="burgerMenuOpenLink">Mes projets</a>
         <a href="" class="burgerMenuOpenLink">Mon parcours</a>
         <a href="" class="burgerMenuOpenLink">Me contacter</a>
-        <div class="burgerMenuOpenWhite"></div>
     </div>
+    <!--Mobile Menu burger-->
+    <div (click)="openMenu()" class="burgerMenu" [ngClass]="{burgerMenuContentActive : isActive}">
+        <span class="burgerMenu-content"></span>
+    </div>
+</div>
+<div class="burgerMenuClosed" [ngClass]="{burgerMenuOpen : isActive}">
+    <a href="" class="burgerMenuOpenLink">Mes projets</a>
+    <a href="" class="burgerMenuOpenLink">Mon parcours</a>
+    <a href="" class="burgerMenuOpenLink">Me contacter</a>
+    <div class="burgerMenuOpenWhite"></div>
 </div>
