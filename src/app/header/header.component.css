@@ -71,9 +71,9 @@
 .burgerMenuClosed{
     position: absolute;
     top: -300%;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
     width: 100vw;
-    z-index: 0;
+    z-index: 1;
 }
 
 .burgerMenuOpen{
